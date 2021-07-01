@@ -33,8 +33,8 @@ public class Messages {
 	public static String imageUploaded = "Image Uploaded";
 	public static String imageNotUploaded = "Image has not Uploaded.";
 	
-	public static String jobAnnouncementAdded = "Job Announcement added";
-	public static String jobAnnouncementNotAdded = "Job Announcement has not added.";
+	public static String jobAdvertNotListByEmployer = "Job Advert Not List By Employer.";
+	public static String jobAdvertListByEmployer = "Job Advert List By Employer.";
 	
 	public static String languageAdded = "Language added";
 	public static String languageNotAdded = "Language has not added.";

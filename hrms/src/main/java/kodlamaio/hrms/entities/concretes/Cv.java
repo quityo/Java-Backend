@@ -31,9 +31,6 @@ public class Cv {
 	@Column(name = "cv_id")
 	private int cvId;
 	
-	@Column(name="image_url")
-	private String imageUrl;
-	
 	@Column(name = "github_address")
 	private String githubAddress;
 
@@ -42,10 +39,7 @@ public class Cv {
 
 	@Column(name = "cover_letter")
 	private String coverLetter;
-	
-	@Column(name="image_link")
-	private String imageLink;
-	
+		
 	
 	@OneToMany(mappedBy = "cv")
 	private List<Skill> skills;

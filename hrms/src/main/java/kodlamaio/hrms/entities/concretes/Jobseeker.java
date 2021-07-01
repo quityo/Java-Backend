@@ -65,4 +65,5 @@ public class Jobseeker extends User{
 	@OneToMany(mappedBy = "jobseeker")
 	private List<Experience> experiences;
 	
+	
 }	

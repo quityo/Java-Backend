@@ -7,10 +7,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
+import kodlamaio.hrms.entities.concretes.Image;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -40,9 +42,12 @@ public class User {
 
 	@Column(name = "is_verify_email")
 	private boolean isVerifyEmail;
+	
+	@OneToOne(mappedBy = "user")
+	private Image image;
 
-	public User(String email, String password) {
-		this.email = email;
-		this.password = password;
+	public User( int userId ) {
+		super();
+		this.userId = userId;
 	}
 }

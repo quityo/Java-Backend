@@ -10,8 +10,6 @@ import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import kodlamaio.hrms.core.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -46,4 +44,6 @@ public class Employer extends User{
 	@JsonIgnore
 	@OneToMany(mappedBy = "employer")
 	private List<JobAdvert> jobAdverts;
+	
+	
 }

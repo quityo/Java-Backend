@@ -11,7 +11,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
-
 @Service
 public class CloudinaryService {
 
@@ -45,4 +44,5 @@ public class CloudinaryService {
 		fileOutputStream.close();
 		return file;
 	}
+
 }

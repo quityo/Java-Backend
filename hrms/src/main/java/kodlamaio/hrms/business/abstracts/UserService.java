@@ -9,7 +9,7 @@ public interface UserService{
 	//User add(User user);
 //	Result update(User user);
 //	Result delete(int id);
-//	DataResult<User> getById(int id);
+DataResult<User> getById(int id);
 	
 	DataResult<List<User>> getAll();
 	DataResult<User> getByEmail(String email);
